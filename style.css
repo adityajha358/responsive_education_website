@@ -1,0 +1,535 @@
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vw 8vw;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(11, 161, 231, 0.5);
+    z-index: 999;
+}
+
+nav img {
+    width: 180px;
+    cursor: pointer;
+    height: 50px;
+}
+
+nav .navigation {
+    display: flex;
+}
+
+#menu-btn {
+    height: 30px;
+    width: 30px;
+    display: none;
+}
+
+#menu-close {
+    display: none;
+}
+
+nav .navigation ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+}
+
+nav .navigation ul li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav .navigation ul li a {
+    text-decoration: none;
+    color: rgb(12, 12, 12);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav .navigation ul li a:hover {
+    color: rgb(26, 137, 228);
+}
+
+#home {
+    background-image: linear-gradient(rgba(5, 25, 54, 0.3), rgba(4, 10, 46, 0.7)), url('images/background.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+
+}
+
+#home h2 {
+    color: white;
+    font-size: 2.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+}
+
+#home p {
+    width: 50%;
+    color: antiquewhite;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+#home a {
+    text-decoration: none;
+    padding: 13px 35px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background-color: blanchedalmond;
+    border-radius: 8px;
+
+}
+
+#home .btn {
+    margin-top: 20px;
+
+}
+
+#home a.blue {
+    background-color: rgba(13, 17, 228, 0.884);
+    color: rgb(248, 247, 247);
+    transition: 0.5s ease;
+}
+
+#home a.blue:hover {
+    color: rgb(17, 17, 17);
+    background-color: white;
+}
+
+#home a.green {
+    background-color: rgba(4, 71, 10, 0.945);
+    color: rgb(238, 235, 235);
+    transition: 0.5s ease;
+}
+
+#home a.green:hover {
+    color: rgb(17, 16, 16);
+    background-color: white;
+}
+
+/* Features */
+#feature {
+    padding: 5vw 8vw 0vw 8vw;
+    text-align: center;
+}
+
+#feature .fea-base {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#feature .fea-box {
+    color: blue;
+    text-align: start;
+    background-color: rgba(200, 234, 243, 0.521);
+
+}
+
+#feature .fea-box .edu_icon {
+    color: blue;
+    height: 40px;
+    width: 40px;
+}
+
+#feature .fea-box h3 {
+    color: rgb(17, 17, 17);
+    font-size: 2.3rem;
+    font-weight: 600;
+    padding: 12px 0px 12px 0px;
+}
+
+#feature .fea-box p {
+    color: rgb(12, 12, 12);
+    font-size: 1rem;
+    text-align: start;
+    font-weight: 600;
+    padding: 12px 0px 12px 0px;
+}
+
+/* courses */
+
+#course {
+    padding: 8vw 8vw 8vw 8vw;
+    text-align: center;
+
+
+}
+
+#course .course-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 3rem;
+    margin-top: 50px;
+}
+
+#course .courses {
+    text-align: start;
+    background-color: rgba(200, 234, 243, 0.521);
+    height: 100%;
+    position: relative;
+
+}
+
+#course .courses i {
+    color: yellow;
+    font-size: 0.9rem;
+
+}
+
+#course .course-img img {
+    width: 100%;
+    height: 40%;
+    background-image: cover;
+    background-position: center;
+}
+
+#course .courses .cost {
+    background-color: rgb(39, 39, 197);
+    line-height: 70px;
+    width: 70px;
+    height: 70px;
+    color: #ffff;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    bottom: 50px;
+
+
+}
+
+/* Registration form */
+
+#registration {
+    padding: 6vh 8vh 6vh 8vh;
+    background-image: linear-gradient(rgba(170, 115, 115, 0.5), rgba(130, 165, 211, 0.5)), url("images/registration.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#registration .reminder h1 {
+    color: #fff;
+}
+
+#registration .reminder .time {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    color: #fff;
+
+}
+
+#registration .reminder .time .date {
+    text-align: center;
+    padding: 13px 33px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 10px;
+    margin: 0 5px 10px 5px;
+    border: 1px solid rgb(255, 255, 255, 0.18);
+    font-size: 1.1rem;
+    font-weight: 600px;
+}
+
+#registration .form {
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+#registration .form input {
+
+    margin: 15px;
+    padding: 10px 10px;
+    border: 1px solid rgba(247, 110, 110, 0.329);
+    outline: none;
+}
+
+#registration .form .btn {
+    margin-top: 10px;
+}
+
+#registration .form .btn a.yellow {
+    background-color: rgb(236, 232, 20);
+    padding: 13px 35px;
+
+    font-size: 1rem;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#registration .form .btn a.yellow:hover {
+    background-color: rgba(103, 224, 109, 0.767);
+    color: #000;
+}
+
+#registration .form input::placeholder {
+    color: rgb(79, 82, 74);
+    font-weight: 500px;
+    font-size: 0.9rem;
+}
+
+/* Profile */
+
+#expert {
+    padding: 8vw 8vw 8vw 8vw;
+    text-align: center;
+
+}
+
+#expert .expert-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 3rem;
+    margin-top: 50px;
+
+}
+
+#expert .expert-box .profile {
+    background: silver;
+    padding: 30px 10px;
+
+}
+
+.pro-link {
+
+    margin-top: 10px;
+}
+
+.pro-link i {
+    padding: 10px 13px;
+    border: 2px solid green;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+.pro-link i:hover {
+    background-color: rgb(20, 97, 240);
+    color: white;
+    padding: 10px 13px;
+    border: 1px solid green;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    padding: 8vw;
+    background-color: #101c32;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .footer-col {
+    padding-bottom: 40px;
+}
+
+footer h3 {
+    color: white;
+    font-weight: 600px;
+    padding-bottom: 20px;
+}
+
+footer li {
+    list-style: none;
+    color: rgb(116, 108, 108);
+    font-size: 15px;
+    cursor: pointer;
+    padding-bottom: 25px;
+
+}
+
+footer li:hover {
+    color: white;
+}
+
+footer .footer-col a {
+    padding: 8px 15px 8px 15px;
+    background-color: orange;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: 0.3s ease;
+}
+
+footer .footer-col a:hover {
+    background-color: rgb(10, 226, 241);
+    color: #000
+}
+
+footer .footer-col p {
+    color: #fff
+}
+
+footer .footer-col input {
+    padding: 5px;
+    padding-right: 50px;
+    /* width:220px;
+padding: 12px 15px;
+border:none; */
+    outline: none;
+    color: #fff;
+}
+
+.pro-link-bottom i {
+    padding: 13px 13px;
+    border: 2px solid green;
+    cursor: pointer;
+    transition: ease 0.3s;
+    color: white;
+    border-radius: 5%;
+    background-color: #5f7185;
+}
+
+.pro-link-bottom i:hover {
+    padding: 10px 13px;
+    border: 2px solid green;
+    color: black;
+    background-color: #fff;
+}
+
+footer .copyright {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+footer .copyright p {
+    color: #fff;
+
+}
+
+/* Media Query */
+@media (max-width: 769px) {
+
+    nav {
+        padding: 15px 20px;
+    }
+
+    nav img {
+        width: 130px;
+    }
+
+
+    #menu-btn {
+        display: initial;
+    }
+
+    #menu-close {
+        display: initial;
+        font-size: 1.6rem;
+        color: #fff;
+        padding: 30px, 0, 20px, 20px;
+    }
+
+    nav .navigation ul {
+        position: absolute;
+        top: 0;
+        right: -220px;
+        width: 220px;
+        background-color: rgba(17, 20, 104, 0.45);
+        backdrop-filter: blur (4.5px);
+        height: 100vh;
+        display: flex;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .navigation ul.active {
+        right: 0;
+    }
+
+    nav .navigation ul li {
+        padding: 20px 0 20px 40px;
+        margin-left: 0;
+    }
+
+    nav .navigation ul li a {
+        color: #fff;
+    }
+
+    #home {
+        padding-top: 40px;
+    }
+
+    #home p {
+        width: 90%;
+    }
+
+    #feature {
+        padding: 8vw 4vw 0 4vw;
+    }
+
+    #course {
+        padding: 8vw 4vw 0 4vw;
+    }
+
+    #registration {
+        padding: 6vw 4vw 6vw 4vw;
+        margin-top: 8vw;
+    }
+
+    #registration .reminder .time {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+}
+
+@media (max-width:475px) {
+    #registration {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #registration .reminder .time {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
